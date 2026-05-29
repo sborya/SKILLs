@@ -23,6 +23,8 @@ Fill this out to help Nomad tailor your trips.
 ## Logistics
 - **Preferred Airlines/Alliances**: 
 - **Preferred Hotel Groups**: 
+- **Lodging Style**: (e.g., "Boutique/Unique," "International Chains," "Hostels/Social," "Vacation Rentals/Airbnb")
+- **Lodging Budget**: (e.g., "Budget/Economy," "Mid-range/Comfort," "Luxury/High-end")
 - **Preferred Platforms**: 
     - **Flights**: (e.g., "Google Flights", "Kayak", "Skyscanner")
     - **Hotels**: (e.g., "Booking.com", "Hotels.com", "Airbnb")

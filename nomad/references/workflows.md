@@ -62,6 +62,7 @@ Use this workflow to manage the user profile at `~/.gemini/nomad_profile.md`.
     *   **Interests**: Rank culinary, history, nature, etc. (1-5).
     *   **Logistics & Platforms**: 
         *   Ask for preferred airlines and hotel groups.
+        *   **Lodging Preferences**: Ask about preferred style (Boutique, Chains, Hostels, Rentals) and budget level for accommodations.
         *   **MANDATORY**: Ask for preferred booking platforms for both flights (e.g., Kayak, Google Flights, Skyscanner) and accommodations (e.g., Booking.com, Airbnb, Hotels.com). This is critical for Phase 2 deep searches.
     *   **Dining (Skippable)**:
         *   **Dietary Restrictions**: Ask if they have specific dietary needs (Shellfish-free, No Pork, Halal, Kosher, Vegetarian, Vegan, Gluten-free). Explicitly state they can skip if none.
