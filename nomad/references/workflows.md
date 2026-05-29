@@ -63,6 +63,9 @@ Use this workflow to manage the user profile at `~/.gemini/nomad_profile.md`.
     *   **Logistics & Platforms**: 
         *   Ask for preferred airlines and hotel groups.
         *   **MANDATORY**: Ask for preferred booking platforms for both flights (e.g., Kayak, Google Flights, Skyscanner) and accommodations (e.g., Booking.com, Airbnb, Hotels.com). This is critical for Phase 2 deep searches.
+    *   **Dining (Skippable)**:
+        *   **Dietary Restrictions**: Ask if they have specific dietary needs (Shellfish-free, No Pork, Halal, Kosher, Vegetarian, Vegan, Gluten-free). Explicitly state they can skip if none.
+        *   **Food Budget**: Ask about their preferred dining style/budget (e.g., "Street food/Budget," "Casual/Mid-range," "High-end/Fine dining").
     *   **Comfort**: Ask about weather preferences and travel pace.
 4.  **Merge & Save**: Update only the requested sections (keeping others intact) and write the updated Markdown to `~/.gemini/nomad_profile.md`.
 5.  **Confirmation**: Show the final updated summary and confirm it's saved.

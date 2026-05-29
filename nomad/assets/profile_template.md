@@ -26,7 +26,8 @@ Fill this out to help Nomad tailor your trips.
 - **Preferred Platforms**: 
     - **Flights**: (e.g., "Google Flights", "Kayak", "Skyscanner")
     - **Hotels**: (e.g., "Booking.com", "Hotels.com", "Airbnb")
-- **Dietary Restrictions**: 
+- **Dietary Restrictions**: (e.g., "None," or select: Shellfish-free, No Pork, Halal, Kosher, Vegetarian, Vegan, Gluten-free)
+- **Food Budget**: (e.g., "Cheap eats/Street food," "Mid-range/Casual," or "Fine dining/Michelin")
 - **Accessibility Needs**: 
 
 ## Dealbreakers
