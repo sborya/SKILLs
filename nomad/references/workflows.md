@@ -2,13 +2,17 @@
 
 This document provides detailed guidance for executing the Nomad Vacation Planner workflows.
 
-## Phase 0: The Consultation (Weather & Timing)
-Before any routing or activity planning, you must validate the "When" and "Where".
-1.  **Search**: Use `google_web_search` for `[Destination] weather in [Month]`, `[Destination] festivals [Month]`, and `[Destination] public holidays [Month]`.
+## Phase 0: The Consultation (Weather, Timing & Visa)
+Before any routing or activity planning, you must validate the "When", "Where", and "How" (Entry).
+1.  **Search**: Use `google_web_search` for:
+    *   `[Destination] weather in [Month]`
+    *   `[Destination] festivals [Month]` and `[Destination] public holidays [Month]`
+    *   **MANDATORY**: `[Destination] visa requirements for [User Citizenship] citizens` (Ask for citizenship if not in profile).
 2.  **Analyze**: 
     *   Compare weather data with the user's "Comfort Zone" in their profile.
     *   Check for "Golden Weeks" or massive local holidays that lead to overcrowding.
-3.  **Advise**: Present the findings to the user. "October is excellent for Beijing, but I recommend arriving after Oct 7th to avoid the National Day crowds."
+    *   Identify visa-on-arrival, e-visa, or mandatory physical embassy visit requirements.
+3.  **Advise**: Present the findings to the user. "October is excellent for Beijing, but I recommend arriving after Oct 7th to avoid the National Day crowds. Also, as a US citizen, you will need to apply for an L-Visa in advance."
 
 ## Phase 1: The Layout (Surface Search)
 Focus on broad strokes and inter-city logistics.
