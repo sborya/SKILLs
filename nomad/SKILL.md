@@ -14,7 +14,7 @@ Always follow these phases to ensure efficiency and accuracy:
 
 - **Phase 0: Consultation**: Before planning, check the destination's weather, seasonal events, and crowds for the requested dates. Advise the user on timing.
 - **Phase 1: Layout (Surface Search)**: Create the general trip structure.
-    - Propose inter-city transportation.
+    - Propose inter-city transportation options (include **DURATION** and **ROUGH PRICING** for each).
     - Suggest accommodation *types* and areas.
     - List activity options (Provide 3-4 diverse options per day; prioritize "Destination DNA" first, then overlay user interests).
     - **Deliverable**: A Markdown table of the high-level layout.

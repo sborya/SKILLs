@@ -12,7 +12,9 @@ Before any routing or activity planning, you must validate the "When" and "Where
 
 ## Phase 1: The Layout (Surface Search)
 Focus on broad strokes and inter-city logistics.
-1.  **Inter-city Travel**: Identify the logical flow (e.g., Beijing -> Xi'an -> Shanghai). Suggest transport types (High-speed rail vs. Internal flights).
+1.  **Inter-city Travel**: Identify the logical flow (e.g., Beijing -> Xi'an -> Shanghai). 
+    *   **Propose Transport**: Suggest 1-2 transport types (e.g., High-speed rail vs. Internal flights).
+    *   **Logistics**: For each option, provide the **Estimated Duration** (e.g., "4.5 hours") and **Rough Pricing** (e.g., "$80 - $120").
 2.  **Accommodation Areas**: Do not pick specific hotels yet. Suggest neighborhoods (e.g., "Stay near the Bell Tower in Xi'an for history and street food").
 3.  **Activity Curation (The DNA Blend)**:
     *   Start with the **Top 3 "Must-Sees"** for the destination (The DNA).
