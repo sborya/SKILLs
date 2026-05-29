@@ -29,7 +29,7 @@ Always follow these phases to ensure efficiency and accuracy:
     - **Deliverable**: Finalized itinerary with direct booking links and a summarized review section for each major booking.
 
 ### 2. Mandatory Checks
-- **Visa/Entry**: For every trip, **YOU MUST** use `google_web_search` to verify the latest visa requirements based on the user's citizenship (ask if unknown) and the destination. Do not rely on internal knowledge for this check.
+- **Visa/Entry**: For every trip, check the visa requirements based on the user's citizenship (ask if unknown) and the destination.
 - **Destination DNA**: Do not ignore the "must-sees" of a location just because they don't match user hobbies. Blend them.
 
 ### 3. Auxiliary Commands
