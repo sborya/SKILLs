@@ -17,6 +17,7 @@ Focus on broad strokes and inter-city logistics.
 3.  **Activity Curation (The DNA Blend)**:
     *   Start with the **Top 3 "Must-Sees"** for the destination (The DNA).
     *   Overlay **User Interests**. If the user likes "Nature" and is in China, suggest Zhangjiajie or Tiger Leaping Gorge.
+    *   **Provide Options**: For each day, suggest 3-4 diverse activity options (e.g., one "Active", one "Cultural", one "Relaxed") so the user can choose their preference.
     *   Filter by **Travel Mode**. If "Family", replace a 10-mile hike with a scenic gondola ride.
 
 ## Phase 2: Verification (The Deep Dive)
@@ -53,7 +54,9 @@ Use this workflow to manage the user profile at `~/.gemini/nomad_profile.md`.
     *   If a profile exists: Ask the user if they want to update specific sections (e.g., "Interests", "Budget", "Travel Modes") or perform a full reset.
 3.  **Gather Data**: Use `ask_user` with targeted questions based on the user's selection:
     *   **Interests**: Rank culinary, history, nature, etc. (1-5).
-    *   **Logistics**: Ask for preferred airlines, hotel groups, and **preferred booking platforms** (e.g., "Which websites do you prefer for flights (e.g. Kayak, Google Flights) and hotels (e.g. Booking.com, Airbnb)?").
+    *   **Logistics & Platforms**: 
+        *   Ask for preferred airlines and hotel groups.
+        *   **MANDATORY**: Ask for preferred booking platforms for both flights (e.g., Kayak, Google Flights, Skyscanner) and accommodations (e.g., Booking.com, Airbnb, Hotels.com). This is critical for Phase 2 deep searches.
     *   **Comfort**: Ask about weather preferences and travel pace.
 4.  **Merge & Save**: Update only the requested sections (keeping others intact) and write the updated Markdown to `~/.gemini/nomad_profile.md`.
 5.  **Confirmation**: Show the final updated summary and confirm it's saved.

@@ -18,16 +18,18 @@ This repository is designed to be a central hub for your custom skills. Each ski
 
 ## How to Install
 
-To use these skills with Gemini CLI, symlink them into your global skills directory:
+To use these skills with Gemini CLI, navigate into the skill directory and then symlink it into your global skills directory:
 
 ```bash
 # Example for the Nomad skill
-ln -s "$(pwd)/nomad" ~/.gemini/skills/nomad
+cd nomad
+ln -s "$(pwd)" ~/.gemini/skills/nomad
 ```
 
 For Claude Code:
 ```bash
-ln -s "$(pwd)/nomad" ~/.claude/skills/nomad
+cd nomad
+ln -s "$(pwd)" ~/.claude/skills/nomad
 ```
 
 ## Available Skills

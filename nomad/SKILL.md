@@ -16,7 +16,7 @@ Always follow these phases to ensure efficiency and accuracy:
 - **Phase 1: Layout (Surface Search)**: Create the general trip structure.
     - Propose inter-city transportation.
     - Suggest accommodation *types* and areas.
-    - List activity options (Prioritize "Destination DNA" first, then overlay user interests).
+    - List activity options (Provide 3-4 diverse options per day; prioritize "Destination DNA" first, then overlay user interests).
     - **Deliverable**: A Markdown table of the high-level layout.
 - **Phase 2: Verification (Deep Search)**: Once the layout is approved, use `google_web_search` and `web_fetch` to:
     - Find specific flight numbers and current prices (prioritize platforms in user profile, e.g., Kayak).
