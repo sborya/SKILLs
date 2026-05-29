@@ -54,17 +54,22 @@ This phase is triggered by the `nomad verify` command or when the user approves 
 
 ## Session Management
 
+### Automatic State Persistence
+- **Mandate**: You **MUST** execute the `save` logic with the name `auto_save` at the end of every turn where the trip details (destination, dates, layout, or verified items) are updated. 
+- **Goal**: Ensure the user never loses progress even if they don't explicitly ask for a save.
+
 ### `nomad save <name>`
-- **When**: Call this whenever a phase is completed (Phase 0, 1, or 2) or after major user adjustments.
+- **When**: When the user explicitly requests to save their progress under a specific name (e.g., "Save this as my summer backup").
 - **Logic**: 
-    1.  Serialize the current trip context (Destination, Dates, Layout, Verified Details) into a JSON string.
+    1.  Serialize the current trip context into a JSON string.
     2.  Execute `python3 scripts/session_manager.py save <name> '<json_string>'`.
 
 ### `nomad load <name>`
-- **When**: When a user asks to "continue planning [Trip Name]" or "load my [Trip Name] trip".
+- **When**: When a user asks to "continue" or "load" a trip.
 - **Logic**:
-    1.  Execute `python3 scripts/session_manager.py load <name>`.
-    2.  Parse the returned JSON and populate the current session context to resume from the last saved state.
+    1.  If no name is provided, check for `auto_save` first.
+    2.  Execute `python3 scripts/session_manager.py load <name>`.
+    3.  Populate current context from the returned JSON.
 
 ### `nomad sessions`
 - **When**: When the agent starts in a workspace with existing `.nomad_sessions/` or when the user asks "what trips do I have?".
