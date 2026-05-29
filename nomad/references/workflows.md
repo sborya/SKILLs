@@ -52,6 +52,26 @@ This phase is triggered by the `nomad verify` command or when the user approves 
 - **Logic**: Create a table with categories: `Transport`, `Lodging`, `Activities`, `Daily Food (est.)`. 
 - **Total**: Provide a "Low Estimate" and "High Estimate" total.
 
+## Session Management
+
+### `nomad save <name>`
+- **When**: Call this whenever a phase is completed (Phase 0, 1, or 2) or after major user adjustments.
+- **Logic**: 
+    1.  Serialize the current trip context (Destination, Dates, Layout, Verified Details) into a JSON string.
+    2.  Execute `python3 scripts/session_manager.py save <name> '<json_string>'`.
+
+### `nomad load <name>`
+- **When**: When a user asks to "continue planning [Trip Name]" or "load my [Trip Name] trip".
+- **Logic**:
+    1.  Execute `python3 scripts/session_manager.py load <name>`.
+    2.  Parse the returned JSON and populate the current session context to resume from the last saved state.
+
+### `nomad sessions`
+- **When**: When the agent starts in a workspace with existing `.nomad_sessions/` or when the user asks "what trips do I have?".
+- **Logic**:
+    1.  Execute `python3 scripts/session_manager.py list`.
+    2.  Present the list of available session names to the user.
+
 ### `nomad profile`
 Use this workflow to manage the user profile at `~/.gemini/nomad_profile.md`.
 1.  **Check/List**: If a profile exists, read it and display a summary of current settings to the user.

@@ -38,10 +38,15 @@ Always follow these phases to ensure efficiency and accuracy:
 - **Destination DNA**: Do not ignore the "must-sees" of a location just because they don't match user hobbies. Blend them.
 
 ### 3. Auxiliary Commands
+- `nomad save <name>`: Persist the current trip state (JSON) to a named session file. Use this at the end of every turn where state changes.
+- `nomad load <name>`: Restore a previously saved trip state from a named session.
+- `nomad sessions`: List all available saved trip sessions in the current workspace.
 - `nomad packing`: Generate a checklist based on the weather forecast, trip duration, group composition (kids/adults), and planned activities.
 - `nomad budget`: Create a structured budget summary (Flights, Hotels, Food, Activities) based on Phase 2 data.
 - `nomad profile`: Interactively list, create, or selectively update the user's travel profile (`~/.gemini/nomad_profile.md`).
 
 ## Persistence & Profile
-- **Nomad State**: Maintains session state in `nomad_state.json` within the workspace. Check this first to resume trips.
+- **Nomad State**: Nomad maintains named session states in the `.nomad_sessions/` directory within the workspace. 
+    - **Persistence**: You MUST call the `save` logic whenever the trip structure or details change to ensure work can be resumed.
+    - **Resumption**: Always check `nomad sessions` if the user asks to "resume" or "continue" a trip.
 - **User Profile**: Nomad leverages `~/.gemini/nomad_profile.md`. **If this file does not exist, you MUST execute the `nomad profile` workflow before performing any other task.**
