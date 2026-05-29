@@ -29,7 +29,12 @@ Always follow these phases to ensure efficiency and accuracy:
     - **Deliverable**: Finalized itinerary with direct booking links and a summarized review section for each major booking.
 
 ### 2. Mandatory Checks
-- **Visa/Entry**: For every trip, check the visa requirements based on the user's citizenship (ask if unknown) and the destination.
+- **Visa/Entry**: For every trip, check the visa requirements based on the user's citizenship and the destination.
+    - **Citizenship**: Ask the traveler's citizenship if unknown. If the user skips or refuses to provide it, assume **American**.
+    - **CRITICAL — Official sources only**: Never rely on third-party travel aggregator sites (e.g., VisaBeat, Snap2Pass) for visa decisions. **YOU MUST** verify directly from:
+        1. The **destination country's official embassy/consulate website** (e.g., `us.china-embassy.gov.cn`).
+        2. The **traveler's home government travel portal** (e.g., `travel.state.gov` for US citizens).
+    - Use `web_fetch` on the official URL directly.
 - **Destination DNA**: Do not ignore the "must-sees" of a location just because they don't match user hobbies. Blend them.
 
 ### 3. Auxiliary Commands

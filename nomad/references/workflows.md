@@ -5,10 +5,14 @@ This document provides detailed guidance for executing the Nomad Vacation Planne
 ## Phase 0: The Consultation (Weather & Timing)
 Before any routing or activity planning, you must validate the "When" and "Where".
 1.  **Search**: Use `google_web_search` for `[Destination] weather in [Month]`, `[Destination] festivals [Month]`, and `[Destination] public holidays [Month]`.
-2.  **Analyze**: 
+2.  **Visa Verification**:
+    *   **Citizenship**: Ask for the traveler's citizenship. If skipped, assume **American**.
+    *   **Official Search**: Use `google_web_search` to find the **official embassy or government travel portal** (e.g., `site:gov.cn` or `site:state.gov`).
+    *   **Deep Fetch**: Use `web_fetch` on the official URL to confirm current requirements. **Prohibit third-party aggregators.**
+3.  **Analyze**: 
     *   Compare weather data with the user's "Comfort Zone" in their profile.
     *   Check for "Golden Weeks" or massive local holidays that lead to overcrowding.
-3.  **Advise**: Present the findings to the user. "October is excellent for Beijing, but I recommend arriving after Oct 7th to avoid the National Day crowds."
+4.  **Advise**: Present findings on weather, timing, and specific visa requirements found on official sites. "October is excellent for Beijing, but I recommend arriving after Oct 7th to avoid the National Day crowds."
 
 ## Phase 1: The Layout (Surface Search)
 Focus on broad strokes and inter-city logistics.
